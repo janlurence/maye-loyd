@@ -394,20 +394,117 @@ hero p {
   border: 1px solid white;
 }
 
-footer {
-  padding: 3rem;
-  background-color: var(--brown);
-  color: white;
+/* New section styles matching the invitation look */
+.entourage,
+.details {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  background-color: #f9f7f5;
+}
+
+.wedding-timeline {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  background-color: white;
+}
+
+.entourage h2,
+.wedding-timeline h2,
+.details h2 {
+  color: var(--brown);
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.entourage h4,
+.wedding-timeline h4,
+.details h4 {
+  color: #8b674f;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.entourage h5,
+.wedding-timeline h5,
+.details h5 {
+  color: #6b4f3f;
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+}
+
+.entourage h6,
+.details h6 {
+  color: #8b674f;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.entourage p,
+.wedding-timeline p,
+.details p {
+  color: #6b5b52;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.entourage em {
+  color: #8b674f;
+  font-size: 0.95rem;
+}
+
+/* Color palette for dress code */
+.color-palette {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.color-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Timeline items styling */
+.timeline-items .row {
+  align-items: center;
+}
+
+.timeline-items i {
+  color: var(--brown);
+}
+
+.timeline-items h5 {
+  color: #6b4f3f;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-items p {
+  margin-bottom: 0;
+  color: #8b8b8b;
+}
 
 /* Prevent page scrolling when the 'no-scroll' class is applied to the body.
    We use position: fixed on the body and preserve the scroll position via inline
    styles in JavaScript to avoid layout jump when toggling. */
-}
 body.no-scroll {
   position: fixed;
   width: 100%;
   overflow: hidden;
 }
+
+footer {
+  padding: 3rem;
+  background-color: var(--brown);
+  color: white;
+}
+
 footer a {
   color: var(--bg);
   font-weight: bold;
